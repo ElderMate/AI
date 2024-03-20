@@ -8,7 +8,7 @@ import json
 import numpy as np
 
 # 토크나이저 로드
-with open('./tokenizer/LSTM_tokenizer.json') as f:
+with open('./tokenizer/tokenizer.json') as f:
     data = json.load(f)
     tokenizer = tokenizer_from_json(data)
 
