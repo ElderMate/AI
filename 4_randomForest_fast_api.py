@@ -39,7 +39,7 @@ async def predict(item: TextItem):
         preprocessed_text = preprocess_text(item.text)
         prediction = model.predict(preprocessed_text)[0]
         predicted_index = np.argmax(prediction)
-        return {"class": get_label_from_index(predicted_index)}
+        return {"response": get_label_from_index(predicted_index)}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
