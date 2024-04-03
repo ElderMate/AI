@@ -1,0 +1,12 @@
+### 프로젝트 실행 방법
+- **Python 버전**: 3.10.11로 가상환경 설정
+- **라이브러리 설치**: 터미널 창에 pip install -r requirements.txt 입력
+- **NER 모델**: 용량 문제로 github에 업로드가 안되어 구글 드라이브에서 직접 다운받아 각 폴더 위치에 삽입
+  - kobert_결제거절:
+  - kobert_결제승인:
+  - kobert_결제취소:
+  - kobert_계좌개설:
+  - kobert_납부예정:
+  - kobert_미납:
+  - kobert_자동이체:
+- **실행**: 8_AI_fast_api.py 파일 실행
