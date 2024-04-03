@@ -10,3 +10,18 @@
   - kobert_미납:
   - kobert_자동이체:
 - **실행**: 8_AI_fast_api.py 파일 실행
+
+<br>
+
+### API 명세서
+<img width="801" alt="스크린샷 2024-04-03 오후 5 39 19" src="https://github.com/ElderMate/AI/assets/110288718/b0ee903e-d012-4f16-add1-a8abb60584dc">
+
+| class_name         | 의미              | response                                                       |
+|--------------------|--------------|----------------------------------------------------------------|
+| payment_denial     | 결제 거절         | { "METHOD": "", "LOCATION": "", "TIME": "", "COST": "", "REJECTION_REASON": "" } |
+| payment_approval   | 결제 승인         | { "METHOD": "", "LOCATION": "", "TIME": "", "COST": "" }       |
+| payment_cancellation | 결제 취소         | { "METHOD": "", "LOCATION": "", "TIME": "", "COST": "" }       |
+| account_opening    | 계좌 개설         | { "BANK": "", "TYPE": "" }                                     |
+| payment_scheduled  | 납부 예정         | { "PAYEE": "", "COST": "", "TIME": "", "PAYMENT_REASON": "" }  |
+| non_payment        | 미납              | { "PAYEE": "", "COST": "", "TIME": "" }                        |
+| automatic_transfer | 자동 이체         | { "BANK": "", "COMPANY": "" }                                  |
